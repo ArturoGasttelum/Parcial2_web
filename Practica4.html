@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Practica4_Examen</title>
+	<style type="text/css">
+
+	.examen{
+		margin: 10%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		padding: 25px;
+		background-color: #732929;
+		border-radius: 5px;
+		opacity: 0.9;
+	}
+	.tex{
+		margin: 1%;
+		margin-top: 5%;
+		color: white;
+
+	}
+		input:invalid {
+	  border: 2px dashed black;
+	}
+	input:valid {
+	  border: 2px solid black;
+	}
+	input:invalid:required {
+	  background-image: linear-gradient(to right, purple, blue, lightgreen, orange, red, orange, lightgreen, blue, purple);
+	}
+	</style>
+</head>
+<body>
+		<div class="examen">
+		<div class="tex">
+		<div class="row">
+			<div class="col-12">
+  		<form action="check in">		
+   		<div class="form-group row">
+			<label class="col-1 col-form-label" for="respuesta">Nombre:</label>
+			<input class="form-control form-control-sm col-7" type="text" placeholder="Apellidos y nombre/s" name="nombre" required>
+			<label class="col-1 col-form-label" for="respuesta">Grupo:</label>
+			<input class="form-control form-control-sm col-3" type="text" placeholder="grupo" name="grupo" required><br>
+		</div>
+		<center><h1>Examen diagnostico de POO </h1></center>
+		<br><h3>POO</h3><br>
+  		<div class="form-group row">
+			<label class="col-4 col-form-label" for="respuesta">Qué significan las siglas "POO"?:</label>
+			<input class="form-control form-control-sm col-8" type="text" placeholder="Escribe tu respuesta" name="respuesta" required>
+			<br>
+		</div>
+		<div class="form-group row">
+			<label class="col-4 col-form-label" for="apellido">Para qué se usa la POO?:</label>
+			<input class="form-control form-control-sm col-8" type="text" placeholder="Escribe tu respuesta" aria-label=".form-control-sm example" name="respuesta" required>
+			<br>
+		</div>	
+		<div class="form-group row">
+			<label class="col-4 col-form-label" for="angulo">Qué es un objeto?:</label>
+			<input class="form-control form-control-sm col-8" type="text" placeholder="Escribe tu respuesta" name="objeto" required>
+			<br>
+		</div>
+			<label for="elementos"><h5>¿Qué elementos crees que definen a un objeto?</h5></label><br>
+			<input type="radio" name="elementos" required> Sus cardinalidad y su tipo <br>
+			<input type="radio" name="elementos" required> Sus atributos y sus métodos <br>
+			<input type="radio" name="elementos" required> La forma en que establece comunicación e intercambia mensajes <br>
+			<input type="radio" name="elementos" required> Su interfaz y los eventos asociados  
+			<br>
+			<br>
+			<label for="instanciar"><h5>Qué significa instanciar una clase?</h5></label><br>
+			<input type="radio" name="instanciar" required> Duplicar una clase <br>
+			<input type="radio" name="instanciar" required> Eliminar una clase <br>
+			<input type="radio" name="instanciar" required> Crear un objeto a partir de la clase <br>
+			<input type="radio" name="instanciar" required> Conectar dos clases entre sí
+			<br>
+			<br>
+			<label for="sobrecargar"><h5>¿Qué significa  (overload) un método?</h5></label><br>
+			<input type="radio" name="sobrecargar" required> Editarlo para modificar su comportamiento <br>
+			<input type="radio" name="sobrecargar" required> Cambiarle el nombre dejándolo con la misma funcionalidad <br>
+			<input type="radio" name="sobrecargar" required> Crear un método con el mismo nombre pero diferentes argumentos <br>
+			<input type="radio" name="sobrecargar" required> Añadirle funcionalidades a un método
+			<br>
+	 		<br>
+			<label for="herramienta">Cuál de las siguientes opciones <b>SI</b> componen una clase?</label><br>
+			<input type="checkbox" value="metodos"> Método <br>
+			<input type="checkbox" value="objetos"> Objeto <br>
+			<input type="checkbox" value="eventos"> Eventos <br>
+			<input type="checkbox" value="atributo"> Atributo <br>
+			<input type="checkbox" value="estructurada"> Programacion estructurada <br>
+			 <br>
+			 <label for="herramienta"><b>NO</b> son principios de la POO:</label><br>
+			<input type="checkbox" value="encapsulacion"> Encapsulación <br>
+			<input type="checkbox" value="abstraccion"> Abstracción <br>
+			<input type="checkbox" value="overload"> Overload <br>
+			<input type="checkbox" value="herencia"> Herencia <br>
+			<input type="checkbox" value="polimorfismo"> Polimorfismo <br>
+			<input type="checkbox" value="duplicar"> Duplicación <br>
+			<br>
+			<label for="herramienta">Cuáles son ventajas del uso de la POO?</label><br>
+			<input type="checkbox" value="reutilizar"> Reutilización de código <br>
+			<input type="checkbox" value="evitar"> Evita duplicación de código <br>
+			<input type="checkbox" value="proteger"> Protege la información mediante la encapsulación <br>
+			<input type="checkbox" value="pensar"> La forma de pensar cambia, para convertirse de <b>tradicional</b> a <b>orientada a objetos</b>
+			<br>
+			<input type="checkbox" value="barreno"> Programacion estructurada <br>
+			<br>
+			
+			<button class="btn btn-outline-success" onclick="location.href='Practica4_Verificacion.html'" >Enviar</button>
+	</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
